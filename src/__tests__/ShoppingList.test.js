@@ -32,3 +32,8 @@ test("displays only items that match the selected category", () => {
 
   expect(container.querySelector(".Items").children).toHaveLength(1);
 });
+expect(container.querySelector(".Items")).not.toBeNull();
+expect(container.querySelector(".Items").children).toHaveLength(
+  testData.length
+);
+export default ShoppingList.test;
